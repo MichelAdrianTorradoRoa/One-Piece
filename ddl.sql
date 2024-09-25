@@ -1,11 +1,15 @@
 CREATE TABLE Piratas(
     Id_Pirata INT NOT NULL PRIMARY KEY,
     Nombre VARCHAR(255) NOT NULL,
-    
+    Recompensa INT NOT NULL,
+    Fecha_de_Nacimiento DATE NOT NULL,
+
 )
 
 CREATE TABLE Rango_Pirata(
     Id_RangoP INT NOT NULL PRIMARY KEY,
+    Nombre VARCHAR(255) NOT NULL,
+    Descripcion VARCHAR(255)
 )
 
 CREATE TABLE Tripulaciones(
