@@ -1,6 +1,6 @@
 CREATE TABLE Piratas(
     Id_Pirata INT NOT NULL PRIMARY KEY,
-
+    
 )
 
 CREATE TABLE Rango_Pirata(
