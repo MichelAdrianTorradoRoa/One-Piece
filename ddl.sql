@@ -1,5 +1,6 @@
 CREATE TABLE Piratas(
     Id_Pirata INT NOT NULL PRIMARY KEY,
+    Nombre VARCHAR(255) NOT NULL,
     
 )
 
