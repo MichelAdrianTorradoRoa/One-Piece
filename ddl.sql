@@ -82,7 +82,9 @@ CREATE TABLE Batallas(
     Id_Batalla INT NOT NULL PRIMARY KEY,
     Nombre VARCHAR(255) NOT NULL UNIQUE,
     Fecha DATE NOT NULL,
-    Resultado VARCHAR(255) NOT NULL
+    Resultado VARCHAR(255) NOT NULL,
+    FOREIGN KEY (Id_Isla) REFERENCES Islas (Id_Isla) ON DELETE CASCADE,
+    FOREIGN KEY (Id_Reino) REFERENCES Reinos (Id_Reino) ON DELETE CASCADE
 );
 
 CREATE TABLE Tripulaciones_Islas(
