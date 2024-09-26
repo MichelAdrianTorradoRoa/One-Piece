@@ -1,46 +1,24 @@
-INSERT INTO Reinos (Id_Reino, Nombre, Monarca, Id_Gobierno) VALUES
-(1, 'Reino de Alabasta', 'Nefertari Vivi', 1),
-(2, 'Reino de Dressrosa', 'Donquixote Doflamingo', 1),
-(3, 'Reino de Wano', 'Kozuki Momonosuke', 2),
-(4, 'Reino de Zou', 'Inuarashi', 1),
-(5, 'Reino de Sabaody', 'Camie', 3),
-(6, 'Reino de Fishman Island', 'Nefertari Vivi', 1),
-(7, 'Reino de Skypiea', 'Enel', 1),
-(8, 'Reino de Water 7', 'Franky', 1),
-(9, 'Reino de East Blue', 'Monkey D. Luffy', 1),
-(10, 'Reino de Marineford', 'Sengoku', 1),
-(11, 'Reino de Impel Down', 'Magellan', 1),
-(12, 'Reino de Alabasta II', 'Nefertari Cobra', 1),
-(13, 'Reino de Enies Lobby', 'Rob Lucci', 1),
-(14, 'Reino de Punk Hazard', 'Caesar Clown', 1),
-(15, 'Reino de Elbaf', 'Hajrudin', 2),
-(16, 'Reino de Flevance', 'Noble', 1),
-(17, 'Reino de Baratie', 'Don Krieg', 1),
-(18, 'Reino de Jaya', 'Bellamy', 1),
-(19, 'Reino de Drum', 'Kureha', 1),
-(20, 'Reino de Loguetown', 'Smoker', 1);
-
-INSERT INTO Gobierno_Mundial (Id_Gobierno, Nombre, Rango, Influencia) VALUES
-(1, 'Kong', 'Comandante en Jefe', 'Alta'),
-(2, 'Imu', 'Soberano del Mundo', 'Máxima'),
-(3, 'Sakazuki', 'Almirante de la Flota', 'Alta'),
-(4, 'Kizaru', 'Almirante', 'Alta'),
-(5, 'Fujitora', 'Almirante', 'Alta'),
-(6, 'Ryokugyu', 'Almirante', 'Alta'),
-(7, 'Sengoku', 'Inspector General', 'Alta'),
-(8, 'Garp', 'Vicealmirante', 'Alta'),
-(9, 'Tsuru', 'Vicealmirante', 'Media'),
-(10, 'Doberman', 'Vicealmirante', 'Media'),
-(11, 'Momonga', 'Vicealmirante', 'Media'),
-(12, 'Onigumo', 'Vicealmirante', 'Media'),
-(13, 'Strawberry', 'Vicealmirante', 'Media'),
-(14, 'Smoker', 'Vicealmirante', 'Media'),
-(15, 'Tashigi', 'Capitán', 'Baja'),
-(16, 'Vergo', 'Vicealmirante', 'Media'),
-(17, 'Coby', 'Capitán', 'Baja'),
-(18, 'Helmeppo', 'Teniente', 'Baja'),
-(19, 'Hina', 'Comodoro', 'Baja'),
-(20, 'Sentomaru', 'Comandante', 'Baja');
+INSERT INTO Reinos (Id_Reino, Nombre, Monarca) VALUES
+(1, 'Reino de Alabasta', 'Nefertari Vivi'),
+(2, 'Reino de Dressrosa', 'Donquixote Doflamingo'),
+(3, 'Reino de Wano', 'Kozuki Momonosuke'),
+(4, 'Reino de Zou', 'Inuarashi'),
+(5, 'Reino de Sabaody', 'Camie'),
+(6, 'Reino de Fishman Island', 'Nefertari Lili'),
+(7, 'Reino de Skypiea', 'Enel'),
+(8, 'Reino de Water 7', 'Franky'),
+(9, 'Reino de East Blue', 'Monkey D. Luffy'),
+(10, 'Reino de Marineford', 'Sengoku'),
+(11, 'Reino de Impel Down', 'Magellan'),
+(12, 'Reino de Alabasta II', 'Nefertari Cobra'),
+(13, 'Reino de Enies Lobby', 'Rob Lucci'),
+(14, 'Reino de Punk Hazard', 'Caesar Clown'),
+(15, 'Reino de Elbaf', 'Hajrudin'),
+(16, 'Reino de Flevance', 'Noble'),
+(17, 'Reino de Baratie', 'Don Krieg'),
+(18, 'Reino de Jaya', 'Bellamy'),
+(19, 'Reino de Drum', 'Kureha'),
+(20, 'Reino de Loguetown', 'Smoker');
 
 INSERT INTO Rango_Marinos (Id_RangoM, Nombre, Descripcion) VALUES
 (1, 'Almirante de la Flota', 'El rango más alto dentro de la Marina'),
@@ -95,18 +73,18 @@ INSERT INTO Frutas_del_Diablo (Id_FrutaDiablo, Nombre, Tipo, Poder, Descripcion)
 (6, 'Ope Ope no Mi', 'Paramecia', 'Cirugía', 'Permite realizar cirugías sin tocar.'),
 (7, 'Tori Tori no Mi, modelo: Fénix', 'Zoan', 'Renacimiento', 'Permite renacer tras la muerte.'),
 (8, 'Noro Noro no Mi', 'Paramecia', 'Tiempo', 'Permite ralentizar el tiempo.'),
-(9, 'Horu Horu no Mi', 'Paramecia', 'Hormonas', 'Permite manipular hormonas del cuerpo.'),
-(10, 'Gura Gura no Mi', 'Paramecia', 'Terremoto', 'Permite generar terremotos.'),
-(11, 'Mochi Mochi no Mi', 'Paramecia', 'Masa', 'Permite crear y controlar mochi.'),
-(12, 'Suke Suke no Mi', 'Paramecia', 'Invisibilidad', 'Permite al usuario volverse invisible.'),
-(13, 'Mato Mato no Mi', 'Paramecia', 'Marcación', 'Permite marcar y conectar objetos.'),
-(14, 'Ushi Ushi no Mi, modelo: Bisonte', 'Zoan', 'Fuerza', 'Permite transformarse en un bisonte.'),
-(15, 'Nika Nika no Mi', 'Paramecia', 'Sonrisas', 'Permite al usuario crear sonrisas.'),
-(16, 'Tori Tori no Mi, modelo: Halcón', 'Zoan', 'Vuelo', 'Permite volar como un halcón.'),
-(17, 'Horu Horu no Mi', 'Paramecia', 'Hormonas', 'Permite manipular hormonas del cuerpo.'),
-(18, 'Rumble Rumble no Mi', 'Logia', 'Rayo', 'Permite al usuario controlar rayos.'),
-(19, 'Kira Kira no Mi', 'Paramecia', 'Brillo', 'Permite al usuario brillar y deslumbrar.'),
-(20, 'Gura Gura no Mi', 'Paramecia', 'Terremoto', 'Permite generar terremotos.');
+(9, 'Gura Gura no Mi', 'Paramecia', 'Terremoto', 'Permite generar terremotos.'),
+(10, 'Mochi Mochi no Mi', 'Paramecia', 'Masa', 'Permite crear y controlar mochi.'),
+(11, 'Suke Suke no Mi', 'Paramecia', 'Invisibilidad', 'Permite al usuario volverse invisible.'),
+(12, 'Mato Mato no Mi', 'Paramecia', 'Marcación', 'Permite marcar y conectar objetos.'),
+(13, 'Ushi Ushi no Mi, modelo: Bisonte', 'Zoan', 'Fuerza', 'Permite transformarse en un bisonte.'),
+(14, 'Nika Nika no Mi', 'Paramecia', 'Sonrisas', 'Permite al usuario crear sonrisas.'),
+(15, 'Tori Tori no Mi, modelo: Halcón', 'Zoan', 'Vuelo', 'Permite volar como un halcón.'),
+(16, 'Rumble Rumble no Mi', 'Logia', 'Rayo', 'Permite al usuario controlar rayos.'),
+(17, 'Kira Kira no Mi', 'Paramecia', 'Brillo', 'Permite al usuario brillar y deslumbrar.'),
+(18, 'Hana Hana no Mi', 'Paramecia', 'Flor', 'Permite generar partes de su cuerpo.'),
+(19, 'Kilo Kilo no Mi', 'Paramecia', 'Peso', 'Permite al usuario controlar su peso.'),
+(20, 'Bomu Bomu no Mi', 'Paramecia', 'Explosión', 'Permite generar explosiones.');
 
 INSERT INTO Armamentos (Id_Armamento, Tipo, Cantidad, Descripcion)
 VALUES
@@ -219,30 +197,30 @@ INSERT INTO Islas (Id_Isla, Nombre, Region, Tipo, Id_Reino) VALUES
 (19, 'Thriller Bark', 'Florian Triangle', 'Errante', NULL),
 (20, 'Wano', 'New World', 'Feudal', 5);
 
-INSERT INTO Marinos (Id_Marino, Nombre, Id_Division, Id_RangoM, Id_Gobierno) VALUES
-(1, 'Monkey D. Garp', 1, 1, 1),
-(2, 'Sengoku', 2, 2, 1),
-(3, 'Borsalino', 3, 3, 1),
-(4, 'Sakazuki', 4, 4, 1),
-(5, 'Kuzan', 5, 5, 1),
-(6, 'Smoker', 6, 6, 1),
-(7, 'Tashigi', 7, 7, 1),
-(8, 'Vergo', 8, 8, 1),
-(9, 'X Drake', 9, 9, 1),
-(10, 'Koby', 10, 10, 1),
-(11, 'Helmeppo', 11, 11, 1),
-(12, 'Coby', 12, 12, 1),
-(13, 'Momonga', 13, 13, 1),
-(14, 'Onigumo', 14, 14, 1),
-(15, 'Doberman', 15, 15, 1),
-(16, 'Strawberry', 16, 16, 1),
-(17, 'Hina', 17, 17, 1),
-(18, 'Tsuru', 18, 18, 1),
-(19, 'Fujitora', 19, 19, 1),
-(20, 'Ryokugyu', 20, 20, 1);
+INSERT INTO Marinos (Id_Marino, Nombre, Id_Division, Id_RangoM) VALUES
+(1, 'Monkey D. Garp', 1, 1),
+(2, 'Sengoku', 2, 2),
+(3, 'Borsalino', 3, 3),
+(4, 'Sakazuki', 1, 4),
+(5, 'Kuzan', 5, 5),
+(6, 'Smoker', 6, 6),
+(7, 'Tashigi', 7, 7),
+(8, 'Vergo', 8, 8),
+(9, 'X Drake', 9, 9),
+(10, 'Koby', 10, 10),
+(11, 'Helmeppo', 11, 11),
+(12, 'Coby', 12, 12),
+(13, 'Momonga', 13, 13),
+(14, 'Onigumo', 14, 14),
+(15, 'Doberman', 15, 15),
+(16, 'Strawberry', 16, 16),
+(17, 'Hina', 17, 17),
+(18, 'Tsuru', 18, 18),
+(19, 'Fujitora', 19, 19),
+(20, 'Ryokugyu', 20, 20);
 
 INSERT INTO Batallas (Id_Batalla, Nombre, Fecha, Resultado, Id_Isla, Id_Reino) VALUES
-(1, 'Batalla de Marineford', '2010-07-01', 'Victoria de los Piratas', 1, 1),
+(1, 'Batalla de Marineford', '2010-07-01', 'Victoria de los Piratas', 14, 1),
 (2, 'Batalla de Enies Lobby', '2006-03-01', 'Victoria de los Piratas', 2, 2),
 (3, 'Batalla de Dressrosa', '2014-08-01', 'Victoria de los Piratas', 3, 3),
 (4, 'Batalla de Marineford II', '2010-07-02', 'Empate', 1, 1),
@@ -262,3 +240,91 @@ INSERT INTO Batallas (Id_Batalla, Nombre, Fecha, Resultado, Id_Isla, Id_Reino) V
 (18, 'Batalla de Elbaf', '2020-11-01', 'Victoria de los Piratas', 17, 17),
 (19, 'Batalla de Dressrosa II', '2014-09-01', 'Victoria de los Piratas', 3, 3),
 (20, 'Batalla de Flevance', '2011-09-01', 'Derrota de los Piratas', 18, 18);
+
+
+
+INSERT INTO Tripulaciones_Islas (Id_Tripulacion, Id_Isla) VALUES
+(1, 1),
+(1, 2),
+(2, 3),
+(3, 1);
+
+
+INSERT INTO Piratas_Islas (Id_Pirata, Id_Isla) VALUES
+(1, 1),
+(2, 2),
+(1, 3),
+(3, 1);
+
+
+INSERT INTO Tripulaciones_Batallas (Id_Tripulacion, Id_Batalla) VALUES
+(1, 1),
+(2, 2),
+(1, 3),
+(3, 2);
+
+
+INSERT INTO Tripulaciones_Reinos (Id_Tripulacion, Id_Reino) VALUES
+(1, 1),
+(2, 2),
+(3, 1),
+(1, 3);
+
+INSERT INTO Piratas_Reinos (Id_Pirata, Id_Reino) VALUES
+(1, 1),
+(2, 2),
+(3, 1),
+(2, 3);
+
+
+INSERT INTO Piratas_Armamentos (Id_Pirata, Id_Armamento) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
+
+
+INSERT INTO Piratas_Frutas (Id_Pirata, Id_FrutaDiablo) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(1, 2);
+
+
+INSERT INTO Marinos_Islas (Id_Marino, Id_Isla) VALUES
+(1, 14),
+(2, 2),
+(3, 3),
+(1, 2);
+
+
+INSERT INTO Marinos_Frutas (Id_Marino, Id_FrutaDiablo) VALUES
+(1, 1),
+(2, 2),
+(3, 3);
+
+INSERT INTO Marinos_Armamentos (Id_Marino, Id_Armamento) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(2, 1);
+
+
+INSERT INTO Marinos_Batallas (Id_Marino, Id_Batalla) VALUES
+(1, 1),
+(2, 2),
+(1, 3),
+(3, 1);
+
+
+INSERT INTO Marinos_Reinos (Id_Marino, Id_Reino) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(1, 2);
+
+
+INSERT INTO Piratas_Batallas (Id_Pirata, Id_Batalla) VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(1, 2);

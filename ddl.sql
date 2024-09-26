@@ -1,11 +1,4 @@
 
-CREATE TABLE Gobierno_Mundial (
-    Id_Gobierno INT NOT NULL PRIMARY KEY,
-    Nombre VARCHAR(255) NOT NULL,
-    Rango VARCHAR(255) NOT NULL,
-    Influencia VARCHAR(255) NOT NULL
-);
-
 CREATE TABLE Rango_Marinos (
     Id_RangoM INT NOT NULL PRIMARY KEY,
     Nombre VARCHAR(255) NOT NULL,
@@ -33,6 +26,11 @@ CREATE TABLE Armamentos (
     Descripcion VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE Reinos (
+    Id_Reino INT NOT NULL PRIMARY KEY,
+    Nombre VARCHAR(255) NOT NULL UNIQUE,
+    Monarca VARCHAR(255) NOT NULL UNIQUE
+);
 
 CREATE TABLE Tripulaciones (
     Id_Tripulacion INT NOT NULL PRIMARY KEY,
@@ -43,26 +41,18 @@ CREATE TABLE Tripulaciones (
 CREATE TABLE Piratas (
     Id_Pirata INT NOT NULL PRIMARY KEY,
     Nombre VARCHAR(255) NOT NULL,
-    Recompensa INT NOT NULL,
+    Recompensa BIGINT NOT NULL,
     Fecha_de_Nacimiento DATE NOT NULL,
     Id_Tripulacion INT,
     FOREIGN KEY (Id_Tripulacion) REFERENCES Tripulaciones (Id_Tripulacion) ON DELETE CASCADE
-);
-
-CREATE TABLE Reinos (
-    Id_Reino INT NOT NULL PRIMARY KEY,
-    Nombre VARCHAR(255) NOT NULL UNIQUE,
-    Monarca VARCHAR(255) NOT NULL UNIQUE,
-    Id_Gobierno INT,
-    FOREIGN KEY(Id_Gobierno) REFERENCES Gobierno_Mundial (Id_Gobierno) ON DELETE CASCADE
 );
 
 CREATE TABLE Navios (
     Id_Navio INT NOT NULL PRIMARY KEY,
     Nombre VARCHAR(255) NOT NULL,
     Capacidad INT NOT NULL,
-    Tipo VARCHAR(255),
-    Tamaño VARCHAR(255),
+    Tipo VARCHAR(255) NOT NULL,
+    Tamaño VARCHAR(255) NOT NULL,
     Id_Tripulacion INT,
     FOREIGN KEY (Id_Tripulacion) REFERENCES Tripulaciones(Id_Tripulacion) ON DELETE CASCADE
 );
@@ -81,10 +71,8 @@ CREATE TABLE Marinos (
     Nombre VARCHAR(255) NOT NULL,
     Id_Division INT,
     Id_RangoM INT,
-    Id_Gobierno INT,
     FOREIGN KEY (Id_Division) REFERENCES Division_Marinos(Id_Division) ON DELETE CASCADE,
-    FOREIGN KEY (Id_RangoM) REFERENCES Rango_Marinos(Id_RangoM) ON DELETE CASCADE,
-    FOREIGN KEY (Id_Gobierno) REFERENCES Gobierno_Mundial(Id_Gobierno) ON DELETE CASCADE
+    FOREIGN KEY (Id_RangoM) REFERENCES Rango_Marinos(Id_RangoM) ON DELETE CASCADE
 );
 
 CREATE TABLE Batallas (
