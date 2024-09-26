@@ -27,13 +27,13 @@ FROM Marinos M
 JOIN Marinos_Batallas MB ON M.Id_Marino = MB.Id_Marino
 JOIN Batallas B ON MB.Id_Batalla = B.Id_Batalla;
 
--- 8. Obtener los piratas y sus respectivos reinos
+-- 8. Obtener los piratas y los reinos que estuvieron
 SELECT R.Nombre AS Reino, P.Nombre AS Pirata
 FROM Reinos R
 JOIN Piratas_Reinos PR ON R.Id_Reino = PR.Id_Reino
 JOIN Piratas P ON PR.Id_Pirata = P.Id_Pirata;
 
--- 9. Contar la cantidad de piratas en cada reino
+-- 9. Contar la cantidad de piratas que estuvieron en cada reino
 SELECT R.Nombre AS Reino, COUNT(P.Id_Pirata) AS Cantidad_Piratas
 FROM Reinos R
 LEFT JOIN Piratas_Reinos PR ON R.Id_Reino = PR.Id_Reino
@@ -179,7 +179,7 @@ SELECT COUNT(*) FROM (
     HAVING COUNT(B.Id_Batalla) > 5
 ) AS Subconsulta;
 
--- 35. Obtener reinos con más piratas que la media
+-- 35. Obtener reinos que tuvieron mas piratas que la media
 SELECT R.Nombre
 FROM Reinos R
 JOIN Piratas_Reinos PR ON R.Id_Reino = PR.Id_Reino
