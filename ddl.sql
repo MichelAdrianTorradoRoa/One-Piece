@@ -1,8 +1,3 @@
-CREATE TABLE Reinos (
-    Id_Reino INT NOT NULL PRIMARY KEY,
-    Nombre VARCHAR(255) NOT NULL UNIQUE,
-    Monarca VARCHAR(255) NOT NULL UNIQUE
-);
 
 CREATE TABLE Gobierno_Mundial (
     Id_Gobierno INT NOT NULL PRIMARY KEY,
@@ -52,6 +47,14 @@ CREATE TABLE Piratas (
     Fecha_de_Nacimiento DATE NOT NULL,
     Id_Tripulacion INT,
     FOREIGN KEY (Id_Tripulacion) REFERENCES Tripulaciones (Id_Tripulacion) ON DELETE CASCADE
+);
+
+CREATE TABLE Reinos (
+    Id_Reino INT NOT NULL PRIMARY KEY,
+    Nombre VARCHAR(255) NOT NULL UNIQUE,
+    Monarca VARCHAR(255) NOT NULL UNIQUE,
+    Id_Gobierno INT,
+    FOREIGN KEY(Id_Gobierno) REFERENCES Gobierno_Mundial (Id_Gobierno) ON DELETE CASCADE
 );
 
 CREATE TABLE Navios (
