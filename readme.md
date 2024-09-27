@@ -742,8 +742,3 @@ Ejecutar consultas: Utiliza las consultas proporcionadas para interactuar con la
 ## Autor
 
 Hecho por [@MichelAdrianTorradoRoa](https://github.com/MichelAdrianTorradoRoa)
-
-```sql
-SELECT Nombre, Recompensa FROM Piratas
-WHERE Recompensa > 100000;
-```
