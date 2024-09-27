@@ -1,4 +1,4 @@
-# Mundo Pirata - Base de Datos
+# ONE PIECE - Base de Datos
 
 Este repositorio contiene una base de datos MySQL que modela el universo de **One Piece**, incluyendo información sobre piratas, marinos, reinos, islas, tripulaciones, batallas y frutas del diablo. La base de datos está diseñada para realizar consultas sobre estos elementos y explorar las relaciones entre ellos.
 
